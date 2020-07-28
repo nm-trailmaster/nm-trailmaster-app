@@ -3,9 +3,9 @@ package edu.cnm.deepdive.trailmaster.model;
 import com.google.gson.annotations.Expose;
 import java.io.Serializable;
 
-public class Trail implements Serializable {
+public class Campsite implements Serializable {
 
-  private static final long serialVersionUID = //TODO Add when video is up from 2/27
+  private static final long serialVersionUID = //TODO add from video on 7/27
 
   @Expose
   private long id;
@@ -79,12 +79,13 @@ public class Trail implements Serializable {
 
   @Override
   public String toString() {
-    return "Trail{" +
-        ", name" + name + '\'' +
+    return "Campsite{" +
+        "id=" + id +
+        ", name='" + name + '\'' +
         ", description='" + description + '\'' +
         ", imageUrl='" + imageUrl + '\'' +
         ", creator=" + creator +
-        ", longLat =" + longLat +
+        ", longLat=" + longLat +
         '}';
   }
 
