@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 public class Campsite implements Serializable {
 
-  private static final long serialVersionUID = //TODO add from video on 7/27
+//  private static final long serialVersionUID = //TODO add from video on 7/27
 
   @Expose
   private long id;
@@ -25,9 +25,9 @@ public class Campsite implements Serializable {
   @Expose
   private LongLat longLat;
 
-  public static long getSerialVersionUID() {
-    return serialVersionUID;
-  }
+//  public static long getSerialVersionUID() {
+//    return serialVersionUID;
+//  }
 
   public long getId() {
     return id;

@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 public class Trail implements Serializable {
 
-  private static final long serialVersionUID = //TODO Add when video is up from 2/27
+//  private static final long serialVersionUID = //TODO Add when video is up from 2/27
 
   @Expose
   private long id;
@@ -25,9 +25,9 @@ public class Trail implements Serializable {
   @Expose
   private LongLat longLat;
 
-  public static long getSerialVersionUID() {
-    return serialVersionUID;
-  }
+//  public static long getSerialVersionUID() {
+//    return serialVersionUID;
+//  }
 
   public long getId() {
     return id;

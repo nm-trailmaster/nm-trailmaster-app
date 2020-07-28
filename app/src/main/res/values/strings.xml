@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">Trail Master</string>
+  <string name="authentication_failure">Unable to sign in with the provided credentials.</string>
+  <string name="sign_out">Sign Out</string>
 </resources>
