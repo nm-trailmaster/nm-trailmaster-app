@@ -11,6 +11,7 @@
   android:background="@color/colorAccent"
   android:orientation="vertical"
   android:gravity="center"
+  android:padding="8dp"
   tools:context=".controller.MainActivity">
 
 
@@ -27,6 +28,7 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text=""
+      android:layout_margin="8dp"
       android:background="@drawable/trail_solo_1"
       />
 
@@ -35,6 +37,7 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text=""
+      android:layout_margin="8dp"
       android:background="@drawable/camp_solo_1"
       />
 
@@ -43,6 +46,7 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text=""
+      android:layout_margin="8dp"
       android:background="@drawable/comm_solo_2"
       />
 
