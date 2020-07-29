@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".controller.Activity1">
+
+  <TextView
+    android:id="@+id/options"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Trailmaster"
+    android:layout_marginTop="150dp"
+    android:textSize="50sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:padding="15dp"/>
+
+  <Button
+    android:id="@+id/butt4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="trails"
+    android:background="@drawable/butt_background_three"
+    app:layout_constraintTop_toBottomOf="@+id/options"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
