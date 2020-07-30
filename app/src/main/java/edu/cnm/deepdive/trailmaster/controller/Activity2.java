@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import edu.cnm.deepdive.trailmaster.R;
 
-public class Activity2 extends AppCompatActivity {
+public class  Activity2 extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +27,9 @@ public class Activity2 extends AppCompatActivity {
     });
 
 
-    butt13.setOnClickListener(new OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        Intent int13 = new Intent(Activity2.this,Activity13.class);
-        startActivity(int13);
-      }
+    butt13.setOnClickListener(v -> {
+      Intent int13 = new Intent(Activity2.this,Activity13.class);
+      startActivity(int13);
     });
 
 

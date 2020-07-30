@@ -2,7 +2,7 @@ package edu.cnm.deepdive.trailmaster.model;
 
 import com.google.gson.annotations.Expose;
 
-public class LongLat {
+public class Geometry {
 
   @Expose
   private String type;

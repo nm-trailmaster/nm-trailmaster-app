@@ -2,4 +2,8 @@
   <string name="app_name">Trail Master</string>
   <string name="authentication_failure">Unable to sign in with the provided credentials.</string>
   <string name="sign_out">Sign Out</string>
+  <string name="oauth_header">Bearer %s</string>
+  <string name="trail_name_hint">Trail Name</string>
+  <string name="cancel">Cancel</string>
+  <string name="ok">OK</string>
 </resources>

@@ -23,7 +23,7 @@ public class Trail implements Serializable {
   private User creator;
 
   @Expose
-  private LongLat longLat;
+  private Geometry geometry;
 
 //  public static long getSerialVersionUID() {
 //    return serialVersionUID;
@@ -69,12 +69,12 @@ public class Trail implements Serializable {
     this.creator = creator;
   }
 
-  public LongLat getLongLat() {
-    return longLat;
+  public Geometry getGeometry() {
+    return geometry;
   }
 
-  public void setLongLat(LongLat longLat) {
-    this.longLat = longLat;
+  public void setGeometry(Geometry geometry) {
+    this.geometry = geometry;
   }
 
   @Override
@@ -84,7 +84,7 @@ public class Trail implements Serializable {
         ", description='" + description + '\'' +
         ", imageUrl='" + imageUrl + '\'' +
         ", creator=" + creator +
-        ", longLat =" + longLat +
+        ", longLat =" + geometry +
         '}';
   }
 
