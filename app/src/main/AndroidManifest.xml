@@ -10,30 +10,46 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-    <activity
-      android:name=".controller.Activity3">
+    <activity android:name=".controller.Activity13">
     </activity>
-    <activity
-      android:name=".controller.Activity2">
+    <activity android:name=".controller.Activity12">
     </activity>
-    <activity
-      android:name=".controller.Activity1">
+    <activity android:name=".controller.Activity11">
     </activity>
-
+    <activity android:name=".controller.Activity10">
+    </activity>
+    <activity android:name=".controller.Activity9">
+    </activity>
+    <activity android:name=".controller.Activity8">
+    </activity>
+    <activity android:name=".controller.Activity7">
+    </activity>
+    <activity android:name=".controller.Activity6">
+    </activity>
+    <activity android:name=".controller.Activity5">
+    </activity>
+    <activity android:name=".controller.Activity4">
+    </activity>
+    <activity android:name=".controller.Activity3">
+    </activity>
+    <activity android:name=".controller.Activity2">
+    </activity>
+    <activity android:name=".controller.Activity1">
+    </activity>
     <activity
       android:label="@string/app_name"
       android:name=".controller.MainActivity">
-<!--    </activity>-->
-<!--    -->
-<!--    <activity -->
-<!--      android:name=".controller.LoginActivity">-->
+
+      <!-- </activity> -->
+      <!--  -->
+      <!-- <activity -->
+      <!-- android:name=".controller.LoginActivity"> -->
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
-
   </application>
 
 </manifest>

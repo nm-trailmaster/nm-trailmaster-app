@@ -5,15 +5,16 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:background="@drawable/comm_options_background"
   tools:context=".controller.Activity3">
 
   <TextView
     android:id="@+id/options"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Community Posts"
-    android:layout_marginTop="150dp"
-    android:textSize="40sp"
+    android:text="Community"
+    android:layout_marginTop="250dp"
+    android:textSize="55sp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
@@ -24,22 +25,26 @@
     android:id="@+id/butt6"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Community"
-    android:background="@drawable/butt_background_three"
+    android:text="Bulletin Board"
+    android:padding="30dp"
+    android:textSize="40sp"
+    android:background="@android:color/transparent"
     app:layout_constraintTop_toBottomOf="@+id/options"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"/>
 
 
-  <Button
-    android:id="@+id/butt7"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Coffee"
-    android:background="@drawable/butt_background_three"
-    app:layout_constraintTop_toBottomOf="@+id/butt6"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"/>
+<!--  <Button-->
+<!--    android:id="@+id/butt7"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Coffee"-->
+<!--    android:padding="30dp"-->
+<!--    android:textSize="40sp"-->
+<!--    android:background="@android:color/transparent"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/butt6"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"/>-->
 
 
 

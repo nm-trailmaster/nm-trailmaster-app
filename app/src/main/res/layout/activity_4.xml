@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:fillViewport="false">
+
+  <LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+    android:layout_gravity="start"
+    tools:context=".MainActivity">
+
+    <TextView
+      android:id="@+id/info"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="trail_info_1"
+      android:layout_margin="50dp"
+      />
+
+    <TextView
+      android:id="@+id/info2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="trail_info_2"
+      android:layout_margin="50dp"
+      />
+
+    <TextView
+      android:id="@+id/info3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="trail_info_3"
+      android:layout_margin="50dp"
+      />
+
+    <TextView
+      android:id="@+id/info4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="trail_info_4"
+      android:layout_margin="50dp"
+      />
+
+    <TextView
+      android:id="@+id/info5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="trail_info_5"
+      android:layout_margin="50dp"
+      />
+
+    <TextView
+      android:id="@+id/info6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="trail_info_6"
+      android:layout_margin="50dp"
+      />
+
+    <TextView
+      android:id="@+id/info7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="trail_info_7"
+      android:layout_margin="50dp"
+      />
+
+    <TextView
+      android:id="@+id/info8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="trail_info_8"
+      android:layout_margin="50dp"
+      />
+
+
+
+  </LinearLayout>
+</ScrollView>
