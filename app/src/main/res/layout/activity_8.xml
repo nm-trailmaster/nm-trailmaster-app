@@ -2,15 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:background="#8B4513"
   android:orientation="vertical">
 
     <ImageView
       android:id="@+id/jemez_site"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:src="@drawable/jemez_canva"
+      android:src="@drawable/jemez_phone_size"
       android:scaleType="centerInside"
-      android:adjustViewBounds="true"
       android:layout_margin="8dp"/>
 
   </LinearLayout>
