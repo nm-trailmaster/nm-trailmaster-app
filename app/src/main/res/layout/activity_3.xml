@@ -26,9 +26,10 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Bulletin Board"
-    android:padding="30dp"
+    android:padding="15dp"
     android:textSize="40sp"
-    android:background="@android:color/transparent"
+    android:textColor="@color/campGreen"
+    android:background="@drawable/butt_background_three"
     app:layout_constraintTop_toBottomOf="@+id/options"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"/>
