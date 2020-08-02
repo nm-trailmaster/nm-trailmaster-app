@@ -21,6 +21,7 @@ public class MainViewModel extends AndroidViewModel implements LifecycleObserver
     pending = new CompositeDisposable();
   }
 
+  // TODO refer to quotes client to finish.
   public LiveData<Throwable> getThrowable() {
     return throwable;
   }
