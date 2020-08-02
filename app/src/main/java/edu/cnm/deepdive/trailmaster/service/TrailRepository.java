@@ -29,6 +29,10 @@ public class TrailRepository {
         .subscribeOn(Schedulers.from(networkPool));
   }
 
+  public Single<Trail> get(String idToken, long id) {
+    return cloudService.get(id)
+        .subscribeOn(Schedulers.from(networkPool));
+  }
   public Single<Trail> save(String idToken, Trail trail) {
     Single<Trail> remoteTask = (trail.getId() == 0)
         ? cloudService.post(getHeader(idToken), trail)
