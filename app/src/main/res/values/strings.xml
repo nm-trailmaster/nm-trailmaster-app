@@ -6,4 +6,6 @@
   <string name="trail_name_hint">Trail Name</string>
   <string name="cancel">Cancel</string>
   <string name="ok">OK</string>
+  <string name="permissions_dialog_title">Permissions Info</string>
+  <string name="internet_explanation">This app needs to access the internet to be able to access Google Maps and trails posted by other users</string>
 </resources>

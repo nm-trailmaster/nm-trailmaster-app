@@ -5,7 +5,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,9 +16,14 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
 import edu.cnm.deepdive.trailmaster.R;
 import edu.cnm.deepdive.trailmaster.service.GoogleSignInService;
+import edu.cnm.deepdive.trailmaster.service.PermissionsService;
 import edu.cnm.deepdive.trailmaster.viewmodel.MainViewModel;
+import java.util.LinkedList;
 
 public class MainActivity extends AppCompatActivity {
+  private static final int PERMISSIONS_REQUEST_CODE = 999;
+
+  private final PermissionsService permissionsService = PermissionsService.getInstance();
   private GoogleSignInService signInService;
 
   @Override
@@ -26,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar = findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
     setupObservers();
+    observePermissions();
+    checkPermissionsOnce();
 
     Button butt1 = findViewById(R.id.butt1);
     Button butt2 = findViewById(R.id.butt2);
@@ -96,5 +105,37 @@ public class MainActivity extends AppCompatActivity {
     startActivity(intent);
   }
 
+
+  @Override
+  public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+      @NonNull int[] grantResults) {
+    if (requestCode == PERMISSIONS_REQUEST_CODE) {
+      permissionsService.updatePermissions(permissions, grantResults);
+    } else {
+      super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+  }
+
+  private void observePermissions() {
+    permissionsService.getPermissions().observe(this, (perms) -> {
+      // Display the permissions in a list view.
+      ListView permissions = findViewById(R.id.permissions);
+      ArrayAdapter<String> adapter =
+          new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new LinkedList<>(perms));
+      permissions.setAdapter(adapter);
+    });
+  }
+
+  private void checkPermissionsOnce() {
+    MainViewModel viewModel = new ViewModelProvider(this).get(MainViewModel.class);
+    // Observe a flag indicating whether permissions have been checked previously.
+    viewModel.getPermissionsChecked().observe(this, (checked) -> {
+      // If permissions have not yet been checked, do so; then set the flag accordingly.
+      if (!checked) {
+        viewModel.setPermissionsChecked(true);
+        permissionsService.checkPermissions(this, PERMISSIONS_REQUEST_CODE);
+      }
+    });
+  }
 
 }

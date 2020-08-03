@@ -27,6 +27,7 @@ public class MainViewModel extends AndroidViewModel implements LifecycleObserver
   private final MutableLiveData<Throwable> throwable;
   private final CompositeDisposable pending;
   private final GoogleSignInService signInService;
+  private final MutableLiveData<Boolean> permissionsChecked;
 
   public MainViewModel(@NonNull Application application) {
     super(application);
@@ -36,6 +37,7 @@ public class MainViewModel extends AndroidViewModel implements LifecycleObserver
     throwable = new MutableLiveData<>();
     pending = new CompositeDisposable();
     signInService = GoogleSignInService.getInstance();
+    permissionsChecked = new MutableLiveData<>(false);
     loadTrails();
   }
 
@@ -56,6 +58,14 @@ public class MainViewModel extends AndroidViewModel implements LifecycleObserver
     String token = getApplication().getString(R.string.oauth_header, account.getIdToken());
     Log.d("OAuth2.0 token", token);
     return token;
+  }
+
+  public LiveData<Boolean> getPermissionsChecked() {
+    return permissionsChecked;
+  }
+
+  public void setPermissionsChecked(boolean checked) {
+    permissionsChecked.setValue(checked);
   }
 
   public void setTrailId(long id) {
@@ -103,6 +113,8 @@ public class MainViewModel extends AndroidViewModel implements LifecycleObserver
         .addOnSuccessListener((account) -> pending.add(task.execute(account)))
         .addOnFailureListener(throwable::postValue);
   }
+
+
 
   public interface AuthenticatedTask {
 
