@@ -14,6 +14,14 @@
     android:layout_gravity="start"
     tools:context=".MainActivity">
 
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--      android:id="@+id/add_trail"-->
+<!--      style="@style/FloatingAction"-->
+<!--      android:src="@drawable/ic_add"-->
+<!--      android:layout_gravity="center|right"-->
+<!--      />-->
+
     <TextView
       android:id="@+id/info"
       android:layout_width="wrap_content"
