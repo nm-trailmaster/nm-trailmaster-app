@@ -61,7 +61,7 @@ public interface TrailMasterCloudService {
           .addConverterFactory(GsonConverterFactory.create(gson))
           .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
           .client(client)
-//          .baseUrl(BuildConfig.BASE_URL)
+         .baseUrl(BuildConfig.BASE_URL)
           .build();
       INSTANCE = retrofit.create(TrailMasterCloudService.class);
 

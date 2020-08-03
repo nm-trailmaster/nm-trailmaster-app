@@ -39,11 +39,10 @@
     <activity
       android:label="@string/app_name"
       android:name=".controller.MainActivity">
+       </activity>
 
-      <!-- </activity> -->
-      <!--  -->
-      <!-- <activity -->
-      <!-- android:name=".controller.LoginActivity"> -->
+       <activity
+       android:name=".controller.LoginActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
