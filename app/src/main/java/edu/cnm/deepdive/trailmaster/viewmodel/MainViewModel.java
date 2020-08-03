@@ -108,4 +108,5 @@ public class MainViewModel extends AndroidViewModel implements LifecycleObserver
 
     Disposable execute(GoogleSignInAccount account);
   }
+
 }
