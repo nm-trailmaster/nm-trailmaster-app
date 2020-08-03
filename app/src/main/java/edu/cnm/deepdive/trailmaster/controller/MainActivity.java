@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     butt1.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent int1 = new Intent(MainActivity.this,Activity1.class);
+        Intent int1 = new Intent(MainActivity.this, TrailOptionsMenu.class);
         startActivity(int1);
       }
     });

@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import edu.cnm.deepdive.trailmaster.R;
 
-public class Activity1 extends AppCompatActivity {
+public class TrailOptionsMenu extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class Activity1 extends AppCompatActivity {
     butt4.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent int4 = new Intent(Activity1.this,Activity4.class);
+        Intent int4 = new Intent(TrailOptionsMenu.this,Activity4.class);
         startActivity(int4);
       }
     });

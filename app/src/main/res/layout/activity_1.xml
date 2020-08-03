@@ -6,7 +6,7 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:background="@drawable/trail_options_background"
-  tools:context=".controller.Activity1">
+  tools:context=".controller.TrailOptionsMenu">
 
   <TextView
     android:id="@+id/options"
