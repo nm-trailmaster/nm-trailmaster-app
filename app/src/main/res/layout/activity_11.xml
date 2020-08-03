@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical">
+  android:layout_height="wrap_content"
+  android:background="#8B4513"
+  android:fillViewport="false">
 
-  <ImageView
-    android:id="@+id/columbine_site"
-    android:layout_width="wrap_content"
+  <LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:src="@drawable/columbine_campground_canva"
-    android:scaleType="centerInside"
-    android:adjustViewBounds="true"
-    android:layout_margin="8dp"/>
+    android:orientation="vertical">
 
+    <ImageView
+      android:id="@+id/elephant_rock_site"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/columbine_long"
+      android:scaleType="centerInside"
+      android:adjustViewBounds="true"
+      android:layout_margin="8dp"/>
 
-
-</LinearLayout>
+  </LinearLayout>
+</ScrollView>

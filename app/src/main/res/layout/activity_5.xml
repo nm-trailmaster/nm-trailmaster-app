@@ -9,6 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/layout"
+    android:background="@color/campGreen"
     android:orientation="vertical"
     android:layout_gravity="start"
     tools:context=".MainActivity">
@@ -16,97 +17,107 @@
     <Button
       android:id="@+id/butt8"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="jemez_national_forrest"
-      android:background="@drawable/butt_background_three"
+      android:layout_height="250dp"
+      android:text="jemez"
+      android:textColor="@color/campYellow"
+      android:textSize="60dp"
+      android:background="@drawable/jemez_pic"
       android:layout_margin="8dp"
       />
 
-    <ImageView
-      android:id="@+id/jemez"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:src="@drawable/jemez_pic"
-      android:scaleType="centerInside"
-      android:adjustViewBounds="true"
-      android:layout_margin="8dp"
-      />
+<!--    <ImageView-->
+<!--      android:id="@+id/jemez"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:src="@drawable/jemez_pic"-->
+<!--      android:scaleType="centerInside"-->
+<!--      android:adjustViewBounds="true"-->
+<!--      android:layout_margin="8dp"-->
+<!--      />-->
 
     <Button
       android:id="@+id/butt9"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="black_canyon"
-      android:background="@drawable/butt_background_three"
+      android:layout_height="250dp"
+      android:text="Black canyon"
+      android:textColor="@color/campYellow"
+      android:textSize="60dp"
+      android:background="@drawable/black_canyon"
       android:layout_margin="8dp"
       />
 
-    <ImageView
-      android:id="@+id/blackcanyon"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:src="@drawable/black_canyon"
-      android:scaleType="centerInside"
-      android:adjustViewBounds="true"
-      android:layout_margin="8dp"
-      />
+<!--    <ImageView-->
+<!--      android:id="@+id/blackcanyon"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:src="@drawable/black_canyon"-->
+<!--      android:scaleType="centerInside"-->
+<!--      android:adjustViewBounds="true"-->
+<!--      android:layout_margin="8dp"-->
+<!--      />-->
 
     <Button
       android:id="@+id/butt10"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="clear_creek_campground"
-      android:background="@drawable/butt_background_three"
+      android:layout_height="250dp"
+      android:text="clear creek"
+      android:textColor="@color/campYellow"
+      android:textSize="60dp"
+      android:background="@drawable/clear_creak_pic"
       android:layout_margin="8dp"
       />
 
-    <ImageView
-      android:id="@+id/clearcreek"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:src="@drawable/clear_creak_pic"
-      android:scaleType="centerInside"
-      android:adjustViewBounds="true"
-      android:layout_margin="8dp"
-      />
+<!--    <ImageView-->
+<!--      android:id="@+id/clearcreek"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:src="@drawable/clear_creak_pic"-->
+<!--      android:scaleType="centerInside"-->
+<!--      android:adjustViewBounds="true"-->
+<!--      android:layout_margin="8dp"-->
+<!--      />-->
 
     <Button
       android:id="@+id/butt11"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="columbine_campground"
-      android:background="@drawable/butt_background_three"
+      android:layout_height="250dp"
+      android:text="columbine"
+      android:textColor="@color/campYellow"
+      android:textSize="60dp"
+      android:background="@drawable/columbine_pic_two"
       android:layout_margin="8dp"
       />
 
-    <ImageView
-      android:id="@+id/columbine"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:src="@drawable/columbine_pic_two"
-      android:scaleType="centerInside"
-      android:adjustViewBounds="true"
-      android:layout_margin="8dp"
-      />
+<!--    <ImageView-->
+<!--      android:id="@+id/columbine"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:src="@drawable/columbine_pic_two"-->
+<!--      android:scaleType="centerInside"-->
+<!--      android:adjustViewBounds="true"-->
+<!--      android:layout_margin="8dp"-->
+<!--      />-->
 
     <Button
       android:id="@+id/butt12"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="elephant_rock"
-      android:background="@drawable/butt_background_three"
+      android:layout_height="250dp"
+      android:text="elephant rock"
+      android:background="@drawable/elephant_rock_pic"
+      android:textSize="60dp"
+      android:textColor="@color/campYellow"
       android:layout_margin="8dp"
       />
 
-    <ImageView
-      android:id="@+id/elephantrock"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:src="@drawable/elephant_rock_pic"
-      android:scaleType="centerInside"
-      android:adjustViewBounds="true"
-      android:layout_margin="8dp"
-      />
+<!--    <ImageView-->
+<!--      android:id="@+id/elephantrock"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:src="@drawable/elephant_rock_pic"-->
+<!--      android:scaleType="centerInside"-->
+<!--      android:adjustViewBounds="true"-->
+<!--      android:layout_margin="8dp"-->
+<!--      />-->
 
   </LinearLayout>
 </ScrollView>

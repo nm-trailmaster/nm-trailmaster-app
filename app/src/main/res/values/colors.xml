@@ -4,4 +4,10 @@
   <color name="colorPrimaryDark">#ffd700</color>
   <color name="colorAccent">#683f1a</color>
   <color name="buttonOuter">#ffff0000</color>
+  <color name="buttonText">#34D3BE</color>
+  <color name="campYellow">#ffd700</color>
+  <color name="campGreen">#4DCA48</color>
+  <color name="campBlue">#38AEE0</color>
+  <color name="campBrown">#574439</color>
+  <color name="campDarkGreen">#18872e</color>
 </resources>
