@@ -8,12 +8,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import edu.cnm.deepdive.trailmaster.R;
 
-public class  Activity2 extends AppCompatActivity {
+public class CampOptionsMenu extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_2);
+    setContentView(R.layout.camp_options_menu);
 
     Button butt5 = findViewById(R.id.butt5);
     Button butt13 = findViewById(R.id.butt13);
@@ -21,14 +21,14 @@ public class  Activity2 extends AppCompatActivity {
     butt5.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent int5 = new Intent(Activity2.this,Activity5.class);
+        Intent int5 = new Intent(CampOptionsMenu.this, StockCampsites.class);
         startActivity(int5);
       }
     });
 
 
     butt13.setOnClickListener(v -> {
-      Intent int13 = new Intent(Activity2.this,Activity13.class);
+      Intent int13 = new Intent(CampOptionsMenu.this, CampEssentialsInfo.class);
       startActivity(int13);
     });
 

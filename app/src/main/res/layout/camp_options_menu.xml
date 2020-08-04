@@ -6,7 +6,7 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:background="@drawable/camp_options_background"
-  tools:context=".controller.Activity2">
+  tools:context=".controller.CampOptionsMenu">
 
   <TextView
     android:id="@+id/options"

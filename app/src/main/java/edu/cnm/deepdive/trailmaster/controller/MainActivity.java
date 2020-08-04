@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     butt2.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent int2 = new Intent(MainActivity.this,Activity2.class);
+        Intent int2 = new Intent(MainActivity.this, CampOptionsMenu.class);
         startActivity(int2);
       }
     });
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     butt3.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent int3 = new Intent(MainActivity.this,Activity3.class);
+        Intent int3 = new Intent(MainActivity.this, CommunityOptionsMenu.class);
         startActivity(int3);
       }
     });

@@ -13,14 +13,14 @@ public class TrailOptionsMenu extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_1);
+    setContentView(R.layout.trail_options_menu);
 
     Button butt4 = findViewById(R.id.butt4);
 
     butt4.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent int4 = new Intent(TrailOptionsMenu.this,Activity4.class);
+        Intent int4 = new Intent(TrailOptionsMenu.this, StockTrails.class);
         startActivity(int4);
       }
     });

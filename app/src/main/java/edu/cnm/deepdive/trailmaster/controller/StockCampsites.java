@@ -8,12 +8,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import edu.cnm.deepdive.trailmaster.R;
 
-public class Activity5 extends AppCompatActivity {
+public class StockCampsites extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_5);
+        setContentView(R.layout.stock_campsites);
 
 
         Button butt8 = findViewById(R.id.butt8);
@@ -25,7 +25,7 @@ public class Activity5 extends AppCompatActivity {
         butt8.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int8 = new Intent(Activity5.this,Activity8.class);
+                Intent int8 = new Intent(StockCampsites.this, JemezInfo.class);
                 startActivity(int8);
             }
         });
@@ -33,7 +33,7 @@ public class Activity5 extends AppCompatActivity {
         butt9.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int9 = new Intent(Activity5.this,Activity9.class);
+                Intent int9 = new Intent(StockCampsites.this, BlackCanyonInfo.class);
                 startActivity(int9);
             }
         });
@@ -41,7 +41,7 @@ public class Activity5 extends AppCompatActivity {
         butt10.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int10 = new Intent(Activity5.this,Activity10.class);
+                Intent int10 = new Intent(StockCampsites.this, ClearCreekInfo.class);
                 startActivity(int10);
             }
         });
@@ -49,7 +49,7 @@ public class Activity5 extends AppCompatActivity {
         butt11.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int11 = new Intent(Activity5.this,Activity11.class);
+                Intent int11 = new Intent(StockCampsites.this, ColumbineInfo.class);
                 startActivity(int11);
             }
         });
@@ -57,7 +57,7 @@ public class Activity5 extends AppCompatActivity {
         butt12.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int12 = new Intent(Activity5.this,Activity12.class);
+                Intent int12 = new Intent(StockCampsites.this, ElephantRockInfo.class);
                 startActivity(int12);
             }
         });

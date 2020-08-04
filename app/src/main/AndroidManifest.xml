@@ -18,29 +18,27 @@
 
 
     <activity
-      android:name=".controller.Activity13">
+      android:name=".controller.CampEssentialsInfo">
     </activity>
-    <activity android:name=".controller.Activity12">
+    <activity android:name=".controller.ElephantRockInfo">
     </activity>
-    <activity android:name=".controller.Activity11">
+    <activity android:name=".controller.ColumbineInfo">
     </activity>
-    <activity android:name=".controller.Activity10">
+    <activity android:name=".controller.ClearCreekInfo">
     </activity>
-    <activity android:name=".controller.Activity9">
+    <activity android:name=".controller.BlackCanyonInfo">
     </activity>
-    <activity android:name=".controller.Activity8">
+    <activity android:name=".controller.JemezInfo">
     </activity>
-    <activity android:name=".controller.Activity7">
+    <activity android:name=".controller.BulletinBoard">
     </activity>
-    <activity android:name=".controller.Activity6">
+    <activity android:name=".controller.StockCampsites">
     </activity>
-    <activity android:name=".controller.Activity5">
+    <activity android:name=".controller.StockTrails">
     </activity>
-    <activity android:name=".controller.Activity4">
+    <activity android:name=".controller.CommunityOptionsMenu">
     </activity>
-    <activity android:name=".controller.Activity3">
-    </activity>
-    <activity android:name=".controller.Activity2">
+    <activity android:name=".controller.CampOptionsMenu">
     </activity>
     <activity android:name=".controller.TrailOptionsMenu">
     </activity>
