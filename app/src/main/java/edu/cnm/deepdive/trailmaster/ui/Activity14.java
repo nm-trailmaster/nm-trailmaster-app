@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.trailmaster.controller;
+package edu.cnm.deepdive.trailmaster.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;

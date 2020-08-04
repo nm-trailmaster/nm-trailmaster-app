@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.trailmaster.controller;
+package edu.cnm.deepdive.trailmaster.ui;
 
 import android.content.Intent;
 import android.view.View;
@@ -7,6 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import edu.cnm.deepdive.trailmaster.R;
+import edu.cnm.deepdive.trailmaster.controller.StockCampsites;
 
 public class CampOptionsMenu extends AppCompatActivity {
 

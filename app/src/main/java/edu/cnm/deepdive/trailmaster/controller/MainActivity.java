@@ -17,6 +17,8 @@ import androidx.lifecycle.ViewModelProvider;
 import edu.cnm.deepdive.trailmaster.R;
 import edu.cnm.deepdive.trailmaster.service.GoogleSignInService;
 import edu.cnm.deepdive.trailmaster.service.PermissionsService;
+import edu.cnm.deepdive.trailmaster.ui.CampOptionsMenu;
+import edu.cnm.deepdive.trailmaster.ui.TrailOptionsMenu;
 import edu.cnm.deepdive.trailmaster.viewmodel.MainViewModel;
 import java.util.LinkedList;
 

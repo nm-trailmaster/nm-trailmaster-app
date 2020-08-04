@@ -1,18 +1,17 @@
 package edu.cnm.deepdive.trailmaster.controller;
 
 import android.content.Intent;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.RecyclerView;
 import edu.cnm.deepdive.trailmaster.R;
-import edu.cnm.deepdive.trailmaster.model.Trail;
-import edu.cnm.deepdive.trailmaster.view.TrailAdapter;
-import edu.cnm.deepdive.trailmaster.viewmodel.MainViewModel;
+import edu.cnm.deepdive.trailmaster.ui.Activity14;
+import edu.cnm.deepdive.trailmaster.ui.Activity15;
+import edu.cnm.deepdive.trailmaster.ui.Activity16;
+import edu.cnm.deepdive.trailmaster.ui.Activity17;
+import edu.cnm.deepdive.trailmaster.ui.Activity18;
 
 public class StockTrails extends AppCompatActivity {
 
@@ -31,7 +30,7 @@ public class StockTrails extends AppCompatActivity {
     buttA.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent intent = new Intent(StockTrails.this,Activity14.class);
+        Intent intent = new Intent(StockTrails.this, Activity14.class);
         startActivity(intent);
       }
     });
@@ -39,7 +38,7 @@ public class StockTrails extends AppCompatActivity {
     buttB.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent intent2 = new Intent(StockTrails.this,Activity15.class);
+        Intent intent2 = new Intent(StockTrails.this, Activity15.class);
         startActivity(intent2);
       }
     });
@@ -47,7 +46,7 @@ public class StockTrails extends AppCompatActivity {
     buttC.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent intent3 = new Intent(StockTrails.this,Activity16.class);
+        Intent intent3 = new Intent(StockTrails.this, Activity16.class);
         startActivity(intent3);
       }
     });
@@ -55,7 +54,7 @@ public class StockTrails extends AppCompatActivity {
     buttD.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent intent4 = new Intent(StockTrails.this,Activity17.class);
+        Intent intent4 = new Intent(StockTrails.this, Activity17.class);
         startActivity(intent4);
       }
     });
@@ -63,7 +62,7 @@ public class StockTrails extends AppCompatActivity {
     buttE.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent intent5 = new Intent(StockTrails.this,Activity18.class);
+        Intent intent5 = new Intent(StockTrails.this, Activity18.class);
         startActivity(intent5);
       }
     });

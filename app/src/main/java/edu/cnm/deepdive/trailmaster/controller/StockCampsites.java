@@ -7,6 +7,11 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import edu.cnm.deepdive.trailmaster.R;
+import edu.cnm.deepdive.trailmaster.ui.BlackCanyonInfo;
+import edu.cnm.deepdive.trailmaster.ui.ClearCreekInfo;
+import edu.cnm.deepdive.trailmaster.ui.ColumbineInfo;
+import edu.cnm.deepdive.trailmaster.ui.ElephantRockInfo;
+import edu.cnm.deepdive.trailmaster.ui.JemezInfo;
 
 public class StockCampsites extends AppCompatActivity {
 
