@@ -1,20 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+
+<ScrollView
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:padding="@dimen/basic_margin">
+  android:layout_height="wrap_content"
+  android:fillViewport="false">
 
-  <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/trails"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
+  <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    android:background="@color/campGreen"
     android:orientation="vertical"
-    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"/>
+    android:layout_gravity="start"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+      android:id="@+id/butt_a"
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:text="La Luz"
+      android:textColor="@color/campYellow"
+      android:textSize="60dp"
+      android:background="@drawable/la_luz_pic"
+      android:layout_margin="8dp"
+      />
+
+
+    <Button
+      android:id="@+id/butt_b"
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:text="Pino Trail"
+      android:textColor="@color/campYellow"
+      android:textSize="60dp"
+      android:background="@drawable/pino_trail_pic"
+      android:layout_margin="8dp"
+      />
+
+
+    <Button
+      android:id="@+id/butt_c"
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:text="South Piedra lisa"
+      android:textColor="@color/campYellow"
+      android:textSize="60dp"
+      android:background="@drawable/south_piedra_lisa_trail_pic"
+      android:layout_margin="8dp"
+      />
+
+
+    <Button
+      android:id="@+id/butt_d"
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:text="Embudito Canyon"
+      android:textColor="@color/campYellow"
+      android:textSize="60dp"
+      android:background="@drawable/embudito_canyon_loop_pic"
+      android:layout_margin="8dp"
+      />
+
+
+    <Button
+      android:id="@+id/butt_e"
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:text="Volcanoes Trail"
+      android:background="@drawable/the_volcanoes_trail_pic"
+      android:textSize="60dp"
+      android:textColor="@color/campYellow"
+      android:layout_margin="8dp"
+      />
+
+
+  </LinearLayout>
+</ScrollView>
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--  xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--  android:layout_width="match_parent"-->
+<!--  android:layout_height="match_parent"-->
+<!--  xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--  android:padding="@dimen/basic_margin">-->
+
+<!--  <androidx.recyclerview.widget.RecyclerView-->
+<!--    android:id="@+id/trails"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="0dp"-->
+<!--    android:orientation="vertical"-->
+<!--    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--    app:layout_constraintTop_toTopOf="parent"-->
+<!--    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"/>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

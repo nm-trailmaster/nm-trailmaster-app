@@ -26,15 +26,6 @@
       android:layout_margin="8dp"
       />
 
-<!--    <ImageView-->
-<!--      android:id="@+id/jemez"-->
-<!--      android:layout_width="wrap_content"-->
-<!--      android:layout_height="wrap_content"-->
-<!--      android:src="@drawable/jemez_pic"-->
-<!--      android:scaleType="centerInside"-->
-<!--      android:adjustViewBounds="true"-->
-<!--      android:layout_margin="8dp"-->
-<!--      />-->
 
     <Button
       android:id="@+id/butt9"
@@ -47,15 +38,6 @@
       android:layout_margin="8dp"
       />
 
-<!--    <ImageView-->
-<!--      android:id="@+id/blackcanyon"-->
-<!--      android:layout_width="wrap_content"-->
-<!--      android:layout_height="wrap_content"-->
-<!--      android:src="@drawable/black_canyon"-->
-<!--      android:scaleType="centerInside"-->
-<!--      android:adjustViewBounds="true"-->
-<!--      android:layout_margin="8dp"-->
-<!--      />-->
 
     <Button
       android:id="@+id/butt10"
@@ -68,15 +50,6 @@
       android:layout_margin="8dp"
       />
 
-<!--    <ImageView-->
-<!--      android:id="@+id/clearcreek"-->
-<!--      android:layout_width="wrap_content"-->
-<!--      android:layout_height="wrap_content"-->
-<!--      android:src="@drawable/clear_creak_pic"-->
-<!--      android:scaleType="centerInside"-->
-<!--      android:adjustViewBounds="true"-->
-<!--      android:layout_margin="8dp"-->
-<!--      />-->
 
     <Button
       android:id="@+id/butt11"
@@ -89,15 +62,6 @@
       android:layout_margin="8dp"
       />
 
-<!--    <ImageView-->
-<!--      android:id="@+id/columbine"-->
-<!--      android:layout_width="wrap_content"-->
-<!--      android:layout_height="wrap_content"-->
-<!--      android:src="@drawable/columbine_pic_two"-->
-<!--      android:scaleType="centerInside"-->
-<!--      android:adjustViewBounds="true"-->
-<!--      android:layout_margin="8dp"-->
-<!--      />-->
 
     <Button
       android:id="@+id/butt12"
@@ -110,15 +74,6 @@
       android:layout_margin="8dp"
       />
 
-<!--    <ImageView-->
-<!--      android:id="@+id/elephantrock"-->
-<!--      android:layout_width="wrap_content"-->
-<!--      android:layout_height="wrap_content"-->
-<!--      android:src="@drawable/elephant_rock_pic"-->
-<!--      android:scaleType="centerInside"-->
-<!--      android:adjustViewBounds="true"-->
-<!--      android:layout_margin="8dp"-->
-<!--      />-->
 
   </LinearLayout>
 </ScrollView>
