@@ -70,14 +70,15 @@ public class TrailAdapter extends RecyclerView.Adapter<Holder> {
       rating = itemView.findViewById(R.id.rating);
     }
 
+    @SuppressWarnings("ConstantConditions")
     private void bind(int position) {
       Trail trail = trails.get(position);
-      name.setText(trail.getName());
-      comment.setText(trail.getComment());
+      name.setText((trail.getName() != null) ? "Trail Name: " + trail.getName(): "Untitled");
+      comment.setText((trail.getComment() != null) ? "Description: " + trail.getComment(): "");
 //      author.setText(trail.getAuthor().getUsername());
-      latitude.setText(numberFormat.format(trail.getLatitude()));
-      longitude.setText(numberFormat.format(trail.getLongitude()));
-      rating.setText(numberFormat.format(trail.getRating()));
+      latitude.setText((numberFormat.format(trail.getLatitude()) != null) ? "Latitude: " + trail.getLatitude() : "Not Known");
+      longitude.setText((numberFormat.format(trail.getLongitude()) != null) ? "Longitude: " + trail.getLatitude() : "Not Known");
+      rating.setText((numberFormat.format(trail.getRating()) != null) ? "Rating: " + trail.getLatitude() : "Not Rated");
       itemView.setOnClickListener((view) -> listener.onClick(view, position, trail));
     }
   }
