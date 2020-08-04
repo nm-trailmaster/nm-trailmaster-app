@@ -3,6 +3,7 @@ package edu.cnm.deepdive.trailmaster.service;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
+import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -78,6 +79,9 @@ public class GoogleSignInService {
   }
 
   private void update(GoogleSignInAccount account) {
+    if (account != null) {
+      Log.d(getClass().getName(), account.getIdToken());
+    }
     this.account.setValue(account);
     this.throwable.setValue(null);
   }

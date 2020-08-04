@@ -54,12 +54,6 @@ public class MainViewModel extends AndroidViewModel implements LifecycleObserver
     return throwable;
   }
 
-  private String getAuthorizationHeader(GoogleSignInAccount account) {
-    String token = getApplication().getString(R.string.oauth_header, account.getIdToken());
-    Log.d("OAuth2.0 token", token);
-    return token;
-  }
-
   public LiveData<Boolean> getPermissionsChecked() {
     return permissionsChecked;
   }

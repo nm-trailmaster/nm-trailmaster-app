@@ -202,7 +202,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
   }
 
   private void graphAllTrails() {
-    trailViewModel.refreshPublicTrails();
+//    trailViewModel.refreshAllTrails();
     trailViewModel.getPublicTrails().observe(this, (trails) -> {
       googleMap.clear();
       for (Trail trail : trails) {

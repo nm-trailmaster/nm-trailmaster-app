@@ -1,5 +1,6 @@
 package edu.cnm.deepdive.trailmaster.model;
 
+import androidx.annotation.Nullable;
 import com.google.gson.annotations.Expose;
 import java.io.Serializable;
 
@@ -11,16 +12,25 @@ public class Trail implements Serializable {
   private long id;
 
   @Expose
+  @Nullable
   private String name;
 
   @Expose
-  private String description;
+  @Nullable
+  private String comment;
 
   @Expose
-  private String imageUrl;
+  @Nullable
+  private User author;
 
   @Expose
-  private User creator;
+  private double latitude;
+
+  @Expose
+  private double longitude;
+
+  @Expose
+  private int rating;
 
   @Expose
   private Geometry geometry;
@@ -45,28 +55,20 @@ public class Trail implements Serializable {
     this.name = name;
   }
 
-  public String getDescription() {
-    return description;
+  public String getComment() {
+    return comment;
   }
 
-  public void setDescription(String description) {
-    this.description = description;
+  public void setComment(String comment) {
+    this.comment = comment;
   }
 
-  public String getImageUrl() {
-    return imageUrl;
+  public User getAuthor() {
+    return author;
   }
 
-  public void setImageUrl(String imageUrl) {
-    this.imageUrl = imageUrl;
-  }
-
-  public User getCreator() {
-    return creator;
-  }
-
-  public void setCreator(User creator) {
-    this.creator = creator;
+  public void setAuthor(User author) {
+    this.author = author;
   }
 
   public Geometry getGeometry() {
@@ -77,14 +79,38 @@ public class Trail implements Serializable {
     this.geometry = geometry;
   }
 
+  public double getLatitude() {
+    return latitude;
+  }
+
+  public void setLatitude(double latitude) {
+    this.latitude = latitude;
+  }
+
+  public double getLongitude() {
+    return longitude;
+  }
+
+  public void setLongitude(double longitude) {
+    this.longitude = longitude;
+  }
+
+  public int getRating() {
+    return rating;
+  }
+
+  public void setRating(int rating) {
+    this.rating = rating;
+  }
+
   @Override
   public String toString() {
     return "Trail{" +
         ", name" + name + '\'' +
-        ", description='" + description + '\'' +
-        ", imageUrl='" + imageUrl + '\'' +
-        ", creator=" + creator +
-        ", longLat =" + geometry +
+        ", comment='" + comment + '\'' +
+        ", author=" + author +
+        ", latitude =" + latitude +
+        ", longitude =" + longitude +
         '}';
   }
 

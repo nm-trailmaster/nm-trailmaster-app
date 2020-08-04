@@ -1,15 +1,28 @@
 package edu.cnm.deepdive.trailmaster.controller;
 
+import android.util.Log;
+import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.RecyclerView;
 import edu.cnm.deepdive.trailmaster.R;
+import edu.cnm.deepdive.trailmaster.model.Trail;
+import edu.cnm.deepdive.trailmaster.view.TrailAdapter;
+import edu.cnm.deepdive.trailmaster.view.TrailAdapter.OnClickListener;
+import edu.cnm.deepdive.trailmaster.viewmodel.MainViewModel;
 
-public class StockTrails extends AppCompatActivity {
+public class StockTrails extends AppCompatActivity implements OnClickListener {
+
+  private MainViewModel viewModel;
+  private RecyclerView trails;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.stock_trails);
+    trails = findViewById(R.id.trails);
+
 
 //    FloatingActionButton buttTrail = findViewById(R.id.add_trail);
 //
@@ -20,5 +33,17 @@ public class StockTrails extends AppCompatActivity {
 //
 //    });
 
+    viewModel = new ViewModelProvider(this).get(MainViewModel.class);
+    viewModel.getTrails().observe(this, (trails) -> {
+//      Log.d(getClass().getName(), trails.toString() );
+      TrailAdapter adapter = new TrailAdapter(this, trails, this);
+      this.trails.setAdapter(adapter);
+    });
+
+  }
+
+  @Override
+  public void onClick(View v, int position, Trail trail) {
+    // This method gets called when a user clicks on a trail in the list
   }
 }

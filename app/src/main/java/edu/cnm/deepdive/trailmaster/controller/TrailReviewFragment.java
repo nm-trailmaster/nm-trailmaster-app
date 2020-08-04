@@ -147,7 +147,7 @@ public class TrailReviewFragment extends DialogFragment implements OnMapReadyCal
     geometry.setCoordinates(p);
     Log.d(TAG, "accept: " + trail);
     trail.setGeometry(geometry);
-    trailViewModel.postTrail(trail);
+//    trailViewModel.postTrail(trail);
   }
 
   private LatLng locationToLatLng(Location location) {

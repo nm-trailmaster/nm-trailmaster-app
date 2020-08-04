@@ -49,38 +49,38 @@ public class TrailViewModel extends AndroidViewModel implements LifecycleObserve
     return postedTrail;
   }
 
-  public void getTrail(Trail trail) {
-    pending.add(
-        NetworkService.getInstance().getTrailById(getAuthorizationHeader(), trail.getId())
-            .subscribeOn(Schedulers.io())
-            .subscribe(this.singleTrail::postValue, this.throwable::postValue)
-    );
-  }
-
-  public void refreshMyTrails() {
-    pending.add(
-        NetworkService.getInstance().getMyTrails(getAuthorizationHeader())
-            .subscribeOn(Schedulers.io())
-            .subscribe(this.myTrails::postValue, this.throwable::postValue)
-    );
-  }
-
-  public void refreshPublicTrails() {
-    pending.add(
-        NetworkService.getInstance().getAllTrails()
-            .subscribeOn(Schedulers.io())
-            .subscribe(this.publicTrails::postValue, this.throwable::postValue)
-    );
-  }
-
-  public void postTrail(Trail trail) {
-    Log.d(TAG, "postTrail: " + trail);
-    pending.add(
-        NetworkService.getInstance().postTrail(getAuthorizationHeader(), trail)
-            .subscribeOn(Schedulers.io())
-            .subscribe(this.postedTrail::postValue, this.throwable::postValue)
-    );
-  }
+//  public void getTrail(Trail trail) {
+//    pending.add(
+//        NetworkService.getInstance().getTrailById(getAuthorizationHeader(), trail.getId())
+//            .subscribeOn(Schedulers.io())
+//            .subscribe(this.singleTrail::postValue, this.throwable::postValue)
+//    );
+//  }
+//
+//  public void refreshMyTrails() {
+//    pending.add(
+//        NetworkService.getInstance().getMyTrails(getAuthorizationHeader())
+//            .subscribeOn(Schedulers.io())
+//            .subscribe(this.myTrails::postValue, this.throwable::postValue)
+//    );
+//  }
+//
+//  public void refreshAllTrails() {
+//    pending.add(
+//        NetworkService.getInstance().getAllTrails()
+//            .subscribeOn(Schedulers.io())
+//            .subscribe(this.publicTrails::postValue, this.throwable::postValue)
+//    );
+//  }
+//
+//  public void postTrail(Trail trail) {
+//    Log.d(TAG, "postTrail: " + trail);
+//    pending.add(
+//        NetworkService.getInstance().postTrail(getAuthorizationHeader(), trail)
+//            .subscribeOn(Schedulers.io())
+//            .subscribe(this.postedTrail::postValue, this.throwable::postValue)
+//    );
+//  }
 
 
   public LiveData<Throwable> getThrowable() {
@@ -90,16 +90,6 @@ public class TrailViewModel extends AndroidViewModel implements LifecycleObserve
   public void setAccount(GoogleSignInAccount account) {
     this.account.setValue(account);
   }
-
-  private String getAuthorizationHeader() {
-    // FIXME finish adding token to viewmodel instead of querying signinservice
-    String token = getApplication()
-        .getString(R.string.oauth_header,
-            GoogleSignInService.getInstance().getAccount().getValue().getIdToken());
-    Log.d("OAuth2.0 token", token);
-    return token;
-  }
-
 
   @OnLifecycleEvent(Event.ON_STOP)
   private void clearPending() {
@@ -115,12 +105,12 @@ public class TrailViewModel extends AndroidViewModel implements LifecycleObserve
     return myTrails;
   }
 
-  public void deleteTrail(Trail trail) {
-    String token = getAuthorizationHeader();
-    pending.add(NetworkService.getInstance().delete(token, trail.getId())
-        .subscribeOn(Schedulers.io())
-        .subscribe(this::refreshMyTrails, this.throwable::postValue)
-    );
-
-  }
+//  public void deleteTrail(Trail trail) {
+//    String token = getAuthorizationHeader();
+//    pending.add(NetworkService.getInstance().delete(token, trail.getId())
+//        .subscribeOn(Schedulers.io())
+//        .subscribe(this::refreshMyTrails, this.throwable::postValue)
+//    );
+//
+//  }
 }

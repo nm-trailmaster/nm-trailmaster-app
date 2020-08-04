@@ -153,7 +153,6 @@ public interface NetworkService {
           .addInterceptor(interceptor)
           .build();
 
-      // TODO Get our server working here P.S. this wont work without it & line 164
       Gson gson = new GsonBuilder()
           .excludeFieldsWithoutExposeAnnotation()
           .registerTypeAdapter(Date.class, new DateDeserializer())
@@ -161,7 +160,7 @@ public interface NetworkService {
       Retrofit retrofit = new Retrofit.Builder()
           .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
           .addConverterFactory(GsonConverterFactory.create(gson))
-//          .baseUrl(BuildConfig.BASE_URL)
+          .baseUrl(BuildConfig.BASE_URL)
           .client(client)
           .build();
       INSTANCE = retrofit.create(NetworkService.class);
