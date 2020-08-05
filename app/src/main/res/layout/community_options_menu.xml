@@ -15,7 +15,6 @@
     android:text="community"
     android:padding="15dp"
     android:textSize="40sp"
-    android:layout_margin="50dp"
     android:textColor="@color/campBrown"
     android:background="@drawable/com_options_butt"
     app:layout_constraintTop_toTopOf="parent"
