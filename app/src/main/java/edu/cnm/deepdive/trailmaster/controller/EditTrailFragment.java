@@ -68,10 +68,6 @@ public class EditTrailFragment extends DialogFragment
     latitude = root.findViewById(R.id.latitude);
     longitude = root.findViewById(R.id.longitude);
     rating = root.findViewById(R.id.rating);
-    name.addTextChangedListener(this);
-    comment.addTextChangedListener(this);
-    latitude.addTextChangedListener(this);
-    longitude.addTextChangedListener(this);
     dialog = new AlertDialog.Builder(getContext())
         .setTitle("Trail Information")
 //        .setIcon()
@@ -117,6 +113,10 @@ public class EditTrailFragment extends DialogFragment
 
   @Override
   public void onShow(DialogInterface dialog) {
+    name.addTextChangedListener(this);
+    comment.addTextChangedListener(this);
+    latitude.addTextChangedListener(this);
+    longitude.addTextChangedListener(this);
     checkSubmitConditions();
   }
 

@@ -92,7 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal|numberSigned"
-        android:hint="Latitude of Trail"/>
+        android:hint="Longitude of Trail"/>
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -112,7 +112,6 @@
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_margin="@dimen/basic_margin"
-      app:min="0"
       android:max="5"
       app:layout_constraintTop_toBottomOf="@id/rating_label"
       app:layout_constraintStart_toStartOf="parent"
