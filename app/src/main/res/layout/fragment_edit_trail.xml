@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  tools:context=".controller.EditTrailFragment">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/basic_margin">
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/name_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/basic_margin"
+      app:hintEnabled="true"
+      app:hintAnimationEnabled="true"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Name of Trail"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/comment_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/basic_margin"
+      app:hintEnabled="true"
+      app:hintAnimationEnabled="true"
+      app:layout_constraintTop_toBottomOf="@id/name_layout"
+      app:layout_constraintStart_toStartOf="parent">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:maxLines="6"
+        android:hint="Description of Trail"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/latitude_layout"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/basic_margin"
+      app:hintEnabled="true"
+      app:hintAnimationEnabled="true"
+      app:layout_constraintTop_toBottomOf="@id/comment_layout"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/longitude_layout"
+      app:layout_constraintHorizontal_weight="1">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Latitude of Trail"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/longitude_layout"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/basic_margin"
+      app:hintEnabled="true"
+      app:hintAnimationEnabled="true"
+      app:layout_constraintTop_toBottomOf="@id/comment_layout"
+      app:layout_constraintStart_toEndOf="@id/latitude_layout"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_weight="1">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Latitude of Trail"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+      android:id="@+id/rating_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/basic_margin"
+      android:labelFor="@id/rating"
+      android:text="Rating"
+      app:layout_constraintTop_toBottomOf="@id/latitude_layout"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+      android:id="@+id/rating"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/basic_margin"
+      app:min="0"
+      android:max="5"
+      app:layout_constraintTop_toBottomOf="@id/rating_label"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!--    TODO Add additional view widgets for other fields.-->
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
