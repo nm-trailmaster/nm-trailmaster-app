@@ -44,7 +44,7 @@
     </activity>
     <activity android:name=".controller.StockTrails">
     </activity>
-    <activity android:name=".controller.CommunityOptionsMenu">
+    <activity android:name=".ui.CommunityOptionsMenu">
     </activity>
     <activity android:name=".ui.CampOptionsMenu">
     </activity>

@@ -5,9 +5,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,9 +16,9 @@ import edu.cnm.deepdive.trailmaster.R;
 import edu.cnm.deepdive.trailmaster.service.GoogleSignInService;
 import edu.cnm.deepdive.trailmaster.service.PermissionsService;
 import edu.cnm.deepdive.trailmaster.ui.CampOptionsMenu;
+import edu.cnm.deepdive.trailmaster.ui.CommunityOptionsMenu;
 import edu.cnm.deepdive.trailmaster.ui.TrailOptionsMenu;
 import edu.cnm.deepdive.trailmaster.viewmodel.MainViewModel;
-import java.util.LinkedList;
 
 public class MainActivity extends AppCompatActivity {
   private static final int PERMISSIONS_REQUEST_CODE = 999;

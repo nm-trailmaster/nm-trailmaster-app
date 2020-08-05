@@ -5,21 +5,22 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="@drawable/comm_options_background"
-  tools:context=".controller.CommunityOptionsMenu">
+  android:background="#d9d9d9"
+  tools:context=".ui.CommunityOptionsMenu">
 
-  <TextView
-    android:id="@+id/options"
+  <Button
+    android:id="@+id/butt_comm"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Community"
-    android:textSize="55sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
+    android:layout_height="250dp"
+    android:text="community"
+    android:padding="15dp"
+    android:textSize="40sp"
+    android:layout_margin="50dp"
+    android:textColor="@color/campBrown"
+    android:background="@drawable/com_options_butt"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintVertical_bias="0.6"
-    android:padding="15dp"/>
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
 
 
   <Button
@@ -28,17 +29,26 @@
     android:layout_height="wrap_content"
     android:text="Bulletin Board"
     android:padding="15dp"
-    android:textSize="40sp"
+    android:layout_margin="50dp"
+    android:textSize="35sp"
     android:textColor="@color/campDarkGreen"
     android:background="@drawable/butt_background_three"
-    app:layout_constraintTop_toBottomOf="@+id/options"
+    app:layout_constraintTop_toBottomOf="@+id/butt_comm"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"/>
 
-
-
-
-
-
+  <Button
+    android:id="@+id/butt_gallery"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="gallery"
+    android:textSize="35sp"
+    android:textColor="@color/campDarkGreen"
+    android:padding="15dp"
+    android:layout_margin="40dp"
+    android:background="@drawable/butt_background_three"
+    app:layout_constraintTop_toBottomOf="@id/butt6"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

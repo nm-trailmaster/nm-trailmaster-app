@@ -5,37 +5,50 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="@drawable/trail_options_background"
+  android:background="#d9d9d9"
   tools:context=".ui.TrailOptionsMenu">
 
-  <TextView
-    android:id="@+id/options"
+  <Button
+    android:id="@+id/butt_trail"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Trailmaster"
-    android:textSize="50sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
+    android:layout_height="250dp"
+    android:text="trailmaster"
+    android:padding="15dp"
+    android:textSize="40sp"
+    android:layout_margin="50dp"
+    android:textColor="@color/campBrown"
+    android:background="@drawable/trail_options_butt"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintVertical_bias="0.63"
-    android:padding="15dp"/>
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
 
   <Button
     android:id="@+id/butt4"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="trails"
+    android:text="Abq trails"
     android:padding="15dp"
-    android:textSize="40sp"
+    android:layout_margin="50dp"
+    android:textSize="35sp"
     android:textColor="@color/campDarkGreen"
     android:background="@drawable/butt_background_three"
-    app:layout_constraintTop_toBottomOf="@+id/options"
+    app:layout_constraintTop_toBottomOf="@+id/butt_trail"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"/>
 
-
-
-
+  <Button
+    android:id="@+id/butt_challenge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="challenge"
+    android:textSize="35sp"
+    android:textColor="@color/campDarkGreen"
+    android:padding="15dp"
+    android:layout_margin="40dp"
+    android:background="@drawable/butt_background_three"
+    app:layout_constraintTop_toBottomOf="@id/butt4"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
