@@ -1,10 +1,14 @@
 apply plugin: 'com.android.application'
 
-def getLocalProperty(String propertyName) {
+def getLocalProperty(propertyName) {
     Properties properties = new Properties()
-    properties.load(project.rootProject.file("local.properties").newDataInputStream())
+    File file = project.rootProject.file("local.properties")
+    if (file.exists()) {
+        properties.load(project.rootProject.file(file).newDataInputStream())
+    }
     return properties.getProperty(propertyName)
 }
+
 
 static def quoted(String value) {
     return String.format("\"%s\"", value)
@@ -23,7 +27,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "String", "CLIENT_ID", quoted("219415729585-d24ecgmnl7fcmjhn3pb7m5ulgdp4s171.apps.googleusercontent.com")
-        buildConfigField "String", "BASE_URL", quoted(getLocalProperty("build_url"))
+        buildConfigField "String", "BASE_URL", quoted(getLocalProperty("build_url") ?: "http://10.0.2.2:8080/")
 
     }
 
