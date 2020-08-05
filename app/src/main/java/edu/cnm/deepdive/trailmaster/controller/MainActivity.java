@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar = findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
     setupObservers();
-    observePermissions();
     checkPermissionsOnce();
 
     Button butt1 = findViewById(R.id.butt1);
@@ -116,16 +115,6 @@ public class MainActivity extends AppCompatActivity {
     } else {
       super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
-  }
-
-  private void observePermissions() {
-    permissionsService.getPermissions().observe(this, (perms) -> {
-      // Display the permissions in a list view.
-      ListView permissions = findViewById(R.id.permissions);
-      ArrayAdapter<String> adapter =
-          new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new LinkedList<>(perms));
-      permissions.setAdapter(adapter);
-    });
   }
 
   private void checkPermissionsOnce() {

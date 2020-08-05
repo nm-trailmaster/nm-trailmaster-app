@@ -3,5 +3,5 @@
   <dimen name="half_margin">4dp</dimen>
   <dimen name="card_corner">4dp</dimen>
   <dimen name="basic_margin">8dp</dimen>
-  <dimen name="button_buffer">40</dimen>
+  <dimen name="button_buffer">40dp</dimen>
 </resources>
