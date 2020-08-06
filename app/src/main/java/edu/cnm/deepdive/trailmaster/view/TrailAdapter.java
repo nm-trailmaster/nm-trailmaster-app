@@ -77,8 +77,8 @@ public class TrailAdapter extends RecyclerView.Adapter<Holder> {
       comment.setText((trail.getComment() != null) ? "Description: " + trail.getComment(): "");
 //      author.setText(trail.getAuthor().getUsername());
       latitude.setText((numberFormat.format(trail.getLatitude()) != null) ? "Latitude: " + trail.getLatitude() : "Not Known");
-      longitude.setText((numberFormat.format(trail.getLongitude()) != null) ? "Longitude: " + trail.getLatitude() : "Not Known");
-      rating.setText((numberFormat.format(trail.getRating()) != null) ? "Rating: " + trail.getLatitude() : "Not Rated");
+      longitude.setText((numberFormat.format(trail.getLongitude()) != null) ? "Longitude: " + trail.getLongitude() : "Not Known");
+      rating.setText((numberFormat.format(trail.getRating()) != null) ? "Rating: " + trail.getRating() : "Not Rated");
       itemView.setOnClickListener((view) -> listener.onClick(view, position, trail));
     }
   }
